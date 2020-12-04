@@ -13,7 +13,7 @@ const OurValue = () => {
                         </div>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container mobile_spacing">
                 <div id="spacing" class="row">
                     <div class="col-md-3">
                         <div className="retan"> 

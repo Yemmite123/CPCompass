@@ -794,8 +794,8 @@
         margin-bottom: 5%;
 }
 .corver_border{
-border-bottom: 4px solid #01E581 ;
-border-radius: 10px;
+    border-bottom: 4px solid #01E581 ;
+    border-radius: 10px;
 }
 .app_download_section > p{
         width: 318px;
@@ -977,10 +977,8 @@ border-radius: 10px;
 .parallax {
     /* The image used */
     background-image: url("./images/share2.png");
-  
     /* Set a specific height */
     min-height: 700px; 
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
