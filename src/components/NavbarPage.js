@@ -34,7 +34,7 @@ render() {
               <MDBNavLink exact activeClassName="menu_main_active" to="/FAQs">FAQs</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink exact activeClassName="menu_main_active" to="/Contact">Learn</MDBNavLink>
+              <MDBNavLink exact activeClassName="menu_main_active" to="/Contact">Contact</MDBNavLink>
             </MDBNavItem>
             
       

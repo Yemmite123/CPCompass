@@ -3,11 +3,12 @@
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* STYLES GO HERE */
-body{
-    /* background-color: brown; */
-    margin: 0%;
-    padding: 0%;
-}
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
 /* Navigation Menu Start Here  */
 #margin_space{
     margin-left: 0%;
@@ -151,6 +152,7 @@ body{
     width: 100%;
     margin-top: 75%;
     height: 100%;
+    margin-left: -7%;
 }
 
 /* Meet Compass Section End here  */
@@ -408,7 +410,6 @@ body{
     margin-right: 0%;
     margin-top: 0%;
 }
-
 .other_content > p{
     width: 100%;
     left: 135px;
@@ -421,20 +422,126 @@ body{
     /* or 35px */
     color: #414141;
 }
-
 .other_content_img{
     float: none;
     margin-top: 0%;
     width: 100%;
     height: 100;
 }
-
 .other_content_img > img{
     width: 100%;
     height: 100%;
     margin-top: 0%;
 }
 
- /* Our Values Start Here */
+ /* Our Values End Here */
+/* Contact Us Section Start Here */
+ #contact{
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #F5FAFF;
+}
+.contact_section > p {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+#contact_container{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 5%;
+}
+
+.contact_box{
+    width: 100%;
+    height: 222px;
+    border-radius: 6px;
+    margin-bottom: 5%;
+}
+.map-container iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.address > p{
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    margin-top: 20px;
+}
+
+.vertical_line{
+    border-left:none;
+    /* transform: rotate(90deg); */
+    /* padding-left: -70px; */
+    height: 0px;
+    margin-left: 0px;
+  }
+
+/* Contact Us Section End Here */
+
+/* FAQs Section Start Here */
+.faq{
+    height: 306px;
+}
+
+.buttonIn { 
+    position: relative; 
+    width: 100%;
+    height: 100%;
+} 
+
+.accordion_faq{
+    width: 100%;
+    height: 100%;
+}
+
+.accordion_faq_para{
+    width: 100%;
+    height: 100%;
+}
+
+#accordion_card{
+    margin-bottom:1%;
+    width: 100%;
+    background: #E2F2FD;
+    border-radius: 4px;
+    box-shadow: none;
+}
+.accordion_balancing {
+    margin-left: 0%;
+    margin-top: 20%;
+}
+/* FAQs Section End Here */
+
+/* Terms and Conditions Start Here */
+.parallax2 {
+    background-image: url("./images/right_rang.png"), url("./images/left_rang.png");
+    /* background-image: url("./images/left_rang.png"); */
+    min-height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .tandc_legal{
+    width: 100%;
+    height: 100%;
+    left: 172px;
+    top: 179px;
+    background: #E3F2FC;
+    border-radius: 10px;
+}
+
+#margin_space_tandc{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 5%;
+}
 
 }

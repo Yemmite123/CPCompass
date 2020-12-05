@@ -1236,7 +1236,9 @@
     margin-left: 80px;
   }
 
-/* Contact Us Section Start Here */
+/* Contact Us Section End Here */
+
+/* FAQs Section Start Here */
 .faq{
     height: 406px;
     left: 0px;
@@ -1326,8 +1328,6 @@
     box-shadow: none;
 }
 
-
-
 .accordion_faq > h1{
     font-family: Sofia Pro;
     font-style: normal;
@@ -1365,8 +1365,7 @@
     border: none;
     padding-left: 3%;
 }
-
-/* FAQs Start Here */
+/* FAQs Section End Here */
 
 /* Terms and Conditions Start Here */
 .parallax2 {
