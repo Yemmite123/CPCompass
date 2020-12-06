@@ -7,7 +7,10 @@ export class ContactUs extends Component {
             <div>
                  <div id="contact" class="container-fluid">
                     <div id="margin_space3" class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
                             <div className="text-center contact_section">
                                 <h1>We would love to hear from you!</h1>
                                 <p>We are here to answer any questions you may have. Send us an email, chat us up, call or talk to us on our social media channels and we’ll respond as soon as we can.</p>
@@ -64,7 +67,11 @@ export class ContactUs extends Component {
 
                 <div class="container-fluid">
                     <div id="margin_space3" class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-5"
+                            data-aos="fade-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                        >
                             <div className="address">
                                 <h1 className="mb-5"><span className="location"><img src="images/location.svg" alt="marker"/></span>Our Corporate Address</h1>
                                 <div id="map-container-google-1" class=" map-container">
@@ -80,7 +87,11 @@ export class ContactUs extends Component {
                                 
                              </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5" 
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                        >
                        
                             <form class="text-center  p-5 contact_form_inpt" action="#!">
                                 <h1 class="mb-4">Shoot us a message </h1>

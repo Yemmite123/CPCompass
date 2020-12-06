@@ -17,7 +17,11 @@ class MeetCompass extends Component {
     return (
         <div>
         <div className="container-fluid">
-             <div id="margin_space2" className="row">
+             <div id="margin_space2" className="row" 
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+             >
              <div className="meetComp_section">
                 <h1>Meet Compass</h1>
                 <p>An app built to suit your lifestyle, specially designed for you! Features to help you hit your short or long term goals.</p>

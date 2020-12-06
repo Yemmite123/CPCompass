@@ -17,9 +17,9 @@ render() {
       <div className="container-fluid">
         <div id="margin_space" className="row">
           <div className="col-md-12">
-          <MDBNavbar expand="md">
+          <MDBNavbar data-aos="zoom-in"expand="md">
         <MDBNavbarBrand>
-           <MDBNavLink id="nav_link" to="/"><img  src="images/compasstransparentblue (1)logo.svg" alt="Compass"/></MDBNavLink> 
+           <MDBNavLink id="nav_link" to="/"><img src="images/compasstransparentblue (1)logo.svg" alt="Compass"/></MDBNavLink> 
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>

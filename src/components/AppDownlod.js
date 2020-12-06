@@ -4,7 +4,10 @@ const AppDownlod = () => {
     return (
         <div>
            <div id="app_download" class="container-fluid">
-                <div id="margin_space2" class="row">
+                <div id="margin_space2" class="row" 
+                    data-aos="fade-down"
+                    data-aos-duration="3000"
+                >
                     <div class="col-md-6">
                         <div className="app_download_img">
                             <img src="images/app.svg"  alt="app"/>

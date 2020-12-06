@@ -14,6 +14,9 @@ import TermsandConditions from "./Pages/TermsandConditions";
 import Disclaimer from "./Pages/Disclaimer";
 import Cookies from "./Pages/Cookies";
 import AML from "./Pages/AML";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 class App extends Component {
   

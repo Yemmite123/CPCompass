@@ -5,7 +5,10 @@ const AboutUs = () => {
     return (
         <div>
             <div id="margin_space_about" class="container-fluid">
-                <div class="row">
+                <div class="row"
+                data-aos="fade-down"
+                data-aos-duration="3000"
+                >
                     <div class="col-md-6">
                         <div className="about_section">
                             <h1>ABOUT US</h1>

@@ -4,7 +4,11 @@ const  Autopilot = () => {
     return (
         <div>
            <div id="section_color" className="container-fluid">
-                <div id="margin_space2" className="row">
+                <div id="margin_space2" className="row" 
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                >
                     <div className="col-md-6">
                       <div className="autopilot_spacing autopilot_img">
                           <img src="images/autopilot.svg" alt="autopilot"/>

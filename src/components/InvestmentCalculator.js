@@ -5,7 +5,12 @@ export class InvestmentCalculator extends Component {
         return (
             <div>
                 <div className="container-fluid">
-                    <div id="margin_space2" className="row investment_calculator">
+                    <div id="margin_space2" 
+                        className="row investment_calculator"
+                        data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"
+                    >
                         <div className="col-md-6">
                            <div className="investment_calculator_goal">
                                 <h1>What’s your <span>goal?</span></h1>

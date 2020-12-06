@@ -5,7 +5,9 @@ const AboutOtherContent = () => {
     return (
         <div>
             <div class="container-fluid parallax">
-            <div id="margin_space3" class="row">
+            <div id="margin_space3" class="row" 
+                 data-aos="fade-down"
+                 data-aos-duration="3000">
                 <div class="col-md-6">
                     <div className="other_content">
                         <h1>Trading</h1>
@@ -23,7 +25,9 @@ const AboutOtherContent = () => {
             
 
 
-            <div id="margin_space3" class="row">
+            <div id="margin_space3" class="row" 
+                data-aos="fade-left"
+                data-aos-duration="3000">
                 <div class="col-md-6">
                     <div id="add_space" className="other_content">
                         <h1>Investments</h1>
@@ -46,7 +50,10 @@ const AboutOtherContent = () => {
 
 
 
-            <div id="margin_space3" class="row">
+            <div id="margin_space3" class="row"
+                data-aos="fade-down"
+                data-aos-duration="3000"
+                >
                 <div class="col-md-6">
                     <div className="other_content">
                         <h1>Advisory</h1>
@@ -62,7 +69,10 @@ const AboutOtherContent = () => {
 
 
 
-            <div id="margin_space3" class="row">
+            <div id="margin_space3" class="row"
+                data-aos="fade-down"
+                data-aos-duration="3000"
+            >
                 <div class="col-md-6">
                     <div className="other_content">
                         <h1>Real Estate Advisory</h1>

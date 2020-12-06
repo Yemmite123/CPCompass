@@ -6,7 +6,10 @@ const OurValue = () => {
         <div>
             <div id="our_values" class="container-fluid">
                 <div  class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12"  
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                    >
                         <div className="text-center our_values_section">
                            <h1>Our Values</h1>
                            <p>Our Values are not words spoken, but a set of guides, a moral compass to organize our behaviours and actions to all stakeholders. We have fortified our values by making commitments to critical service touch points, identifying possible service defaults, and designing pre-emptive and preventive solutions around them.</p>
@@ -14,7 +17,11 @@ const OurValue = () => {
                     </div>
                 </div>
                 <div class="container mobile_spacing">
-                <div id="spacing" class="row">
+                <div id="spacing" class="row"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                >
                     <div class="col-md-3">
                         <div className="retan"> 
                           <img src="images/Knowledge.svg" alt=""/>

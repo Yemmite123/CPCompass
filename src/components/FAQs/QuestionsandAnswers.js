@@ -23,7 +23,11 @@ export class QuestionsandAnswers extends Component {
         return (
             <div>
                 <div class="container-fluid faq">
-                    <div id="margin_space3" class="row">
+                    <div id="margin_space3" class="row"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                    >
                         <div class="col-md-12">
                             <div className="text-center questions">
                               <h1>Got questions? we’ve got answers</h1>
