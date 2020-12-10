@@ -267,7 +267,7 @@ html, body {
 }
 
 .app_download_img{
-    margin-left: -82%;
+    margin-left: 0%;
 }
 
 .app_download_section > h1{
@@ -277,6 +277,7 @@ html, body {
     margin-top: -20%;
     margin-bottom: 5%;
     text-align: center;
+    margin-top: 10%;
 }
 
 
@@ -543,5 +544,12 @@ html, body {
     margin-right: 0%;
     margin-top: 5%;
 }
+
+.app_download_section > img{
+    margin-top: -10%;
+    margin-left: 43%;
+}
+
+
 
 }

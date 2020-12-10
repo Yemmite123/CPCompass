@@ -78,7 +78,7 @@ export class CookiesPolicy extends Component {
                              <p>For any other web browser, please visit your web browser's official web pages.</p>
                              <hr/>
                              <h2>More Information about Cookies</h2>
-                             <p>You can learn more about cookies in the <span>"What Are Cookies"</span> article.</p>
+                             <p>You can learn more about cookies in the <span><a href="https://www.allaboutcookies.org/" rel="noopener noreferrer" target="_blank">"What Are Cookies" </a> </span> article.</p>
 
                              <hr/>
                              <h2>Contact Us</h2>

@@ -28,16 +28,15 @@ render() {
               <MDBNavLink  exact activeClassName="menu_main_active" to="/About">About</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink  to="#!">Who’s CP?</MDBNavLink>
+              <MDBNavLink exact activeClassName="menu_main_active" to="/Contact">Contact</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink exact activeClassName="menu_main_active" to="/FAQs">FAQs</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink exact activeClassName="menu_main_active" to="/Contact">Contact</MDBNavLink>
+              <MDBNavLink exact activeClassName="menu_main_active" to="/TermsandConditions">Legal</MDBNavLink>
             </MDBNavItem>
             
-      
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem>

@@ -228,11 +228,9 @@
 }
 
 .menu_main_active{
-    color: white !important;
+    color: #127FCB !important;
     /* width: 164px;
     height: 48px; */
-    background: #127FCB;
-    border-radius: 4px;
     font-family: Sofia Pro;
     font-style: normal;
     font-weight: 600;
@@ -284,7 +282,6 @@
 .sign_in{
     width: 164px;
     height: 48px;
-    background: #ffffff;
     border-radius: 4px;
     font-family: Sofia Pro;
     font-style: normal;
@@ -292,17 +289,13 @@
     font-size: 16px;
     line-height: 16px;
     /* identical to box height */
-    color: #ffffff;
-    border: 2px solid #127FCB;
-    transition: all .35s;
-   background-color: #000;
-   transition: background-color 1s;
-   -webkit-transition: background-color 1s;
-   -o-transition: background-color 1s;
-   -moz-transition: background-color 1s;
+    color: #1E1E1E;
+    background-color: #ffffff;
+    border: none;
+
 }
 
-.sign_in:hover{
+/* .sign_in:hover{
     color: #ffffff;
     background-color: #127FCB; ;
     border: 2px solid #000;
@@ -311,7 +304,7 @@
    -webkit-transition: background-color 1s;
    -o-transition: background-color 1s;
    -moz-transition: background-color 1s;
-}
+} */
 /* Navigation Start Here */
 
 /* Home Carousel Start Here */
@@ -414,6 +407,24 @@
     margin-left:  1%;   
 }
 
+.google_play > img:hover{
+   border: 2px solid #fff;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: transform .2s;
+   transform: scale(1.1);
+
+}
+
+.app_store > img:hover{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s;
+    transform: scale(1.0);
+ 
+ }
+
 .app_store{
     position: absolute;
     width: 145.92px;
@@ -495,6 +506,7 @@
 
 .tab_active_now > h1 > a{
     color: #127FCB !important;
+    transition: transform .2s;
 }
 
 .tab_active_now > span{
@@ -512,6 +524,8 @@
 
 .tab_active_now > p {
     color: #2A2A2A !important;
+    /* opacity: 1; */
+    transition: .5s ease;
 }
 
 .line_left {
@@ -534,6 +548,10 @@
 .autopilot_spacing{
     margin-top: 10%;
     margin-bottom: 10%;
+}
+
+.autopilot_spacing > img:hover{
+    transform: scale(1.2);
 }
 .autopilot_section > h1{
     font-family: Sofia Pro;
@@ -768,10 +786,16 @@
 
 /* App Download End Here */
 .app_download_img{
-    margin-left: -20%;
+    margin-left: -6%;
+}
+
+.app_download_img > img{
+ width: 95%;
+ height: 100%;
+ 
 }
 #app_download{
-    height: 500px;
+    height: 100%;
     left: 1px;
     /* top: 3909px; */
     /* light blue */
@@ -793,9 +817,9 @@
         margin-top: 20%;
         margin-bottom: 5%;
 }
-.corver_border{
-    border-bottom: 4px solid #01E581 ;
-    border-radius: 10px;
+.app_download_section > img{
+        margin-top: -10%;
+        margin-left: 33%;
 }
 .app_download_section > p{
         width: 318px;
@@ -807,8 +831,9 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 155%;
-        margin-bottom: 5%;
+        margin-bottom: 7%;
         color: #1E1E1E;
+        margin-top: -2%;
 }
 .app_store2{
     margin-left: 5%;
@@ -954,6 +979,12 @@
     top: 1060px;
     background-color: #FFFFFF;
 }
+
+.retan:hover{
+    border:  2px solid rgba(18, 127, 203, 0.96);
+   border-radius:1px;
+}
+
 .retan > img{
     display: block;
     margin-left: auto;
@@ -1504,6 +1535,27 @@
     color: #127FCB;
 }
 
+
+.tandc_sub_heading > ul >li{
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 15px;
+    /* identical to box height, or 94% */
+    color: #414141;
+}
+
+.aml_list > li{
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 15px;
+    /* identical to box height, or 94% */
+    color: #414141;
+}
+
 .tandc_sub_heading > h2{
     font-family: Sofia Pro;
     font-style: normal;
@@ -1546,6 +1598,17 @@
     margin-right: 10%;
     margin-top: 5%;
 }
+
+
+.Copyright > p, .Copyright >  p > a{
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+}
+
 
 
 

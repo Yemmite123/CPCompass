@@ -1,7 +1,57 @@
 import React, { Component } from 'react'
 import AppDownlod from '../AppDownlod'
+import Swal from 'sweetalert2'
+
+
 
 export class ContactUs extends Component {
+    
+    constructor(){
+        super();
+        this.state={ name:'', email:'', subject:'', message:'', }
+        }
+        handleChange = event =>{
+        this.setState({ [event.target.name]:event.target.value })
+        }
+        handleSubmit = event =>{
+        event.preventDefault();
+        // console.log("User name : " + this.state.name)
+        // console.log("User Email : " + this.state.email)
+        // console.log("User subject : " + this.state.subject)
+        // console.log("User message : " + this.state.message)
+        if(this.state.name === '' || this.state.email === '' || this.state.subject === '' || this.state.message === '' ){
+           Swal.fire({
+            // position: 'top-end',
+            icon: 'error',
+            title: 'All fields are required',
+            showConfirmButton: true,
+            // timer: 2500
+          });
+        }else{
+            const url ="https://dev.api.cpcompass.ng/contact-us"
+            const data = { email:this.state.email, fullName:this.state.name, subject:this.state.subject, message:this.state.message }
+            fetch(url, { method: 'POST', // or ‘PUT’
+            body: JSON.stringify(data), // data can be `string` or {object}!
+            headers:{ 'Content-Type': 'application/json' } })
+            .then(res => res.json())
+            .catch(error => console.error('Error:', error))
+            .then(response => 
+                // console.log('Success:', response),
+                Swal.fire({
+                    // position: 'top-end',
+                    icon: 'success',
+                    title: "Message sent successfull",
+                    showConfirmButton: true,
+                    // timer: 2500
+                  }),
+                
+            ); 
+            event.target.reset();
+             
+           
+        }
+    }
+        
     render() {
         return (
             <div>
@@ -25,22 +75,22 @@ export class ContactUs extends Component {
                                          <div class="text-md-left">
                                             <ul class="list-unstyled list-inline">
                                                 <li class="list-inline-item">
-                                                <a  href="#/" class="btn-floating btn-sm rgba-white-slight">
+                                                <a  href="https://www.facebook.com/ComercioPartners/" rel="noopener noreferrer" target="_blank" class="btn-floating btn-sm rgba-white-slight">
                                                     <img src="images/icons2 facebook.svg" alt="facebook"/>
                                                 </a>
                                                 </li>
                                                 <li class="list-inline-item">
-                                                <a href="#/" class="btn-floating btn-sm rgba-white-slight">
+                                                <a href="https://www.instagram.com/comerciopartners/" rel="noopener noreferrer" target="_blank" class="btn-floating btn-sm rgba-white-slight">
                                                 <img src="images/icons2-instagram (1).svg" alt="instagram"/>
                                                 </a>
                                                 </li>
                                                 <li class="list-inline-item">
-                                                <a  href="#/" class="btn-floating btn-sm rgba-white-slight">
+                                                <a href="https://ng.linkedin.com/company/comercio-partners" rel="noopener noreferrer" target="_blank" class="btn-floating btn-sm rgba-white-slight">
                                                     <img src="images/icons2 linkedin.svg" alt="linkedin"/>
                                                 </a>
                                                 </li>
                                                 <li class="list-inline-item">
-                                                <a  href="#/" class="btn-floating btn-sm rgba-white-slight">
+                                                <a  href="https://twitter.com/comerciopartner?lang=en" rel="noopener noreferrer" target="_blank"class="btn-floating btn-sm rgba-white-slight">
                                                     <img src="images/icons2 twitter.svg" alt="twitter"/>
                                                 </a>
                                                 </li>
@@ -93,13 +143,13 @@ export class ContactUs extends Component {
                         data-aos-duration="1500"
                         >
                        
-                            <form class="text-center  p-5 contact_form_inpt" action="#!">
+                            <form onSubmit={this.handleSubmit} class="text-center  p-5 contact_form_inpt">
                                 <h1 class="mb-4">Shoot us a message </h1>
-                                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Your name"/>
-                                <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Email"/>
-                                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Subject of message"/>
+                                <input type="text" id="defaultContactFormName" name="name" onChange={this.handleChange} class="form-control mb-4" placeholder="Your name" required/>
+                                <input type="email" id="defaultContactFormEmail" name="email" onChange={this.handleChange} class="form-control mb-4" placeholder="Email" required/>
+                                <input type="text" id="defaultContactFormName" name="subject" onChange={this.handleChange} class="form-control mb-4" placeholder="Subject of message" required/>
                                 <div class="form-group">
-                                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="5" placeholder="Your message"></textarea>
+                                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" name="message" onChange={this.handleChange} rows="5" required placeholder="Your message"></textarea>
                                 </div>
                                 <button class="btn btn-block" type="submit">Send message</button>
                             </form>

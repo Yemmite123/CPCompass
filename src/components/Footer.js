@@ -80,32 +80,32 @@ const Footer = () => {
                         <div class="text-md-left">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
-                            <a  href="#/" class="btn-floating btn-sm rgba-white-slight mx-1">
+                            <a  href="https://www.facebook.com/ComercioPartners/" rel="noopener noreferrer" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
                                 <img src="images/icons8 facebook.svg" alt="facebook"/>
                             </a>
                             </li>
                             <li class="list-inline-item">
-                            <a href="#/" class="btn-floating btn-sm rgba-white-slight mx-1">
+                            <a href="https://www.instagram.com/comerciopartners/" rel="noopener noreferrer" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
                               <img src="images/icons8-instagram (1).svg" alt="instagram"/>
                             </a>
                             </li>
                             <li class="list-inline-item">
-                            <a  href="#/" class="btn-floating btn-sm rgba-white-slight mx-1">
+                            <a  href="https://ng.linkedin.com/company/comercio-partners" rel="noopener noreferrer" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
                                 <img src="images/icons8 linkedin.svg" alt="linkedin"/>
                             </a>
                             </li>
                             <li class="list-inline-item">
-                            <a  href="#/" class="btn-floating btn-sm rgba-white-slight mx-1">
+                            <a  href="https://twitter.com/comerciopartner?lang=en" rel="noopener noreferrer" target="_blank" class="btn-floating btn-sm rgba-white-slight mx-1">
                                 <img src="images/icons8 twitter.svg" alt="twitter"/>
                             </a>
                             </li>
                         </ul>
                         </div>
                     </div>
-                    <div class="col-md-7 col-lg-8">
-                        <p class="text-md-right">© 2020 Copyright Comercio Partners || Designed & Developed By 
-                        <a href="http://thebulb.africa/">
-                            <strong> thebulb.africa</strong>
+                    <div class="col-md-7 col-lg-8 Copyright">
+                        <p class="text-md-right">© 2020 Copyright <a href="https://www.comerciopartners.com/" rel="noopener noreferrer" target="_blank">Comercio Partners </a>|| Designed & Developed By 
+                        <a href="http://thebulb.africa/" rel="noopener noreferrer" target="_blank">
+                            <strong> Thebulb.africa</strong>
                         </a>
                         </p>
                     </div>

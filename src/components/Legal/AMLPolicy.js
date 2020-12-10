@@ -32,7 +32,7 @@ export class AMLPolicy extends Component {
     
                                   <li><p>Proof of Residence: An official document issued within the last 3 months, clearly stating your name and address as registered with CP INVEST. This can be a utility bill (i.e. water, electric, or landline), or bank statement. Please make sure your copy includes:</p></li>
                                   
-                                      <ul>
+                                      <ul className="aml_list">
                                       <li><p>Your full, legal name</p></li>
                                       <li><p>Your full residential address</p></li>
                                       <li><p>Date of issue (within the last 3 months)</p></li>

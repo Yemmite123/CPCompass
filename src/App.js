@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import "./index.css";
 import "./smartphonesMediaQueries.css";
 import "./desktopsaAndLaptops.css";
+import "./iPads.css";
 import Footer from "./components/Footer";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
