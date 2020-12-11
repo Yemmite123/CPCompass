@@ -81,7 +81,7 @@ class MeetCompass extends Component {
                           <img src="images/Multi-currency Wallet.svg" alt="Financial Instruments"/>
                         </MDBTabPane>
                         <MDBTabPane tabId="6" role="tabpanel">
-                          <img src="images/Portfolio.svg" alt="Financial Instruments"/>
+                          <img src="images/Portfolio1.svg" alt="Financial Instruments"/>
                         </MDBTabPane>
                         </MDBTabContent>
                    </div>

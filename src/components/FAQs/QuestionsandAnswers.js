@@ -12,12 +12,24 @@ import {
     
 
 export class QuestionsandAnswers extends Component {
-   
+    constructor(){
+        super();
     
-    state = {
-        collapseID: false,
-        persons: []
-      };
+        this.state={
+          search: '',
+          collapseID: false,
+          persons: [],
+        };
+      }
+      searchSpace=(event)=>{
+        let keyword = event.target.value;
+        this.setState({search:keyword})
+      }
+    
+    // state = {
+    //     collapseID: false,
+    //     persons: [],
+    //   };
     
       toggleCollapse = collapseID => () =>
         this.setState(prevState => ({
@@ -28,13 +40,18 @@ export class QuestionsandAnswers extends Component {
             axios.get(`https://dev.api.cpcompass.ng/faq`)
               .then(res => {
                 const persons = res.data.data.faq;
-                console.log(persons);
-                this.setState({ persons });
-              })
+               // console.log(persons);
+               this.setState({ persons });
+              });
           }
     
     render() {
-
+console.log(this.state.search);
+let filteredFAQs = this.state.persons.filter(
+    (persons) => {
+        return persons.title.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+    }
+);
      
         return (
             <div>
@@ -50,10 +67,11 @@ export class QuestionsandAnswers extends Component {
                             <div className="text-center questions">
                               <h1>Got questions? we’ve got answers</h1>
                                 <div className="buttonIn"> 
-                                    <input className="form-control" type="text" id="enter" placeholder="Search for answers"/> 
+                                    <input className="form-control" type="text" id="enter" onChange={(e)=>this.searchSpace(e)}   placeholder="Search for answers"/> 
                                     <button id="clear">Search</button> 
-                                </div> 
+                                  </div> 
                             </div>
+                            
                         </div>
                  
                     </div>
@@ -65,17 +83,14 @@ export class QuestionsandAnswers extends Component {
                     <div id="margin_space3" className="row">
                         <div className="col-md-12">
                             <div className="accordion_balancing">
-                            { this.state.persons.map(person =>
-                                <MDBCard id="accordion_card">
-                                    
+                            { filteredFAQs.map(person =>
+                                <MDBCard id="accordion_card" key={person.id} >  
                                     <MDBCardHeader id={this.state.collapseID === 'collapse' + person.id ? 'your_className': null}
                                     onClick={this.toggleCollapse('collapse'+person.id)}
-                                    tagClassName=''
                                     className="accordion_faq"
                                     >
                                      <h1>
                                          {person.title}
-                                      
                                     <MDBIcon
                                         icon={
                                         this.state.collapseID === 'collapse' + person.id
